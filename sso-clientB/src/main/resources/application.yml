@@ -1,0 +1,23 @@
+server:
+  port: 8003
+
+spring:
+  thymeleaf:
+    cache: false
+
+  #mysq连接
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.169:3306/yilu_mall?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: 123456
+
+  redis:
+    host: 192.168.0.169
+    port: 6379
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+  resources:
+    static-locations: classpath:/resources/static/,classpath:/resources/templates/
